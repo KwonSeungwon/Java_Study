@@ -1,0 +1,22 @@
+-- 2021-04-15
+-- JAVA Tutorial BulidPath
+
+1. javac.exe, java.exe 파일을 다른 디렉토리에서도 실행가능하도록 로컬에 환경변수를 설정해야한다.
+2. 내컴퓨터 -> 속성 -> (탭)고급 -> 환경변수 설정 -> 새로 만들기 -> 변수 이름 : JAVA_HOME / 변수 값 : JDK가 설치된 경로를 넣고 확인 -> 이후 Path를 선택하고 수정을 클릭 ->
+새로만들기로 jdk경로 내부의 bin파일을 등록해주면 환경변수 설정은 끝
+3. 환경변수 테스트 : cmd(명령프롬프트) java -version, javac를 실행해보면 확인가능
+※ 시스템변수에 추가하는 것은 모든 계정에서 사용할 수 있도록 설정하는 것이고 그 위의 {계정명}에 대한 사용자변수 설정은 로그인된 사용자 환경에서만
+작동하도록 설정해주는 것이다.
+
+
+4. JAVA 구조
+JDK(개발자 도구) - Develpoment kit
+JRE(실행 도구/) - Runtime Enviroment
+API(기능제어를 위한 인터페이스) - Aplication Program Interface
+JVM(컴파일) - Java Visual machine
+
+5. JVM 컴파일 구조
+java 코드 -> (java 컴파일러 / javac, exe) -> 바이트 코드 컴파일(class) ->(JVM 실행) -> 기계어로 변환 -> 실행
+
+6.JAVA의 메모리 관리
+Heap Memory 영역에서 가비지컬렉터가 자동으로 관리해준다.
