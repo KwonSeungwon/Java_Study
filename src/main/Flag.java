@@ -30,6 +30,7 @@ public class Flag {
         int score = reader.read();
         switch (score) {
             case 100 :
+            case 95: // 좌측과 같이 여러가지 조건을 추가해서 사용할 수 있음.
                 writer.write("A등급:" + score);
                 break;
             case 90 :
