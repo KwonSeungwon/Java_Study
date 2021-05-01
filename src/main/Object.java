@@ -40,6 +40,10 @@ public class Object { // <- 클래스 : 일반적으로 클래스명은 첫 글�
 
         return "";
     }
+
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
 }
 
 

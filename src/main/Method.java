@@ -17,6 +17,7 @@ public class Method {
         method.setData("권승원", "M", 29); //메소드 호출
         method.setData("test", true, 20.5);
         method.runTest(); //메소드 호출
+        System.gc(); // 가비지컬렉터 호출
 
     }
     /* 메소드명은 카멜표기식을 주로사용 + (동사 + 목적어or명사로 메소드명을 정함)
@@ -33,7 +34,7 @@ public class Method {
     }
 
     public void setData(String name, String gender, int age) {
-        this.name = name;
+        this.name = name; // 현재클래스 Method 클래스의 name을 this를 통해 가르킴
         this.gender = gender;
         this.age = age;
     }
