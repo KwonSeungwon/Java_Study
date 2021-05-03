@@ -1,4 +1,4 @@
-package main;
+package com.java.main;
 
 //클래스는 멤버변수(속성), 메서드(기능), 생성자 등으로 구성
 public class Object { // <- 클래스 : 일반적으로 클래스명은 첫 글자는 대문자로 쓴다

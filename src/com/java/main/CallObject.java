@@ -1,4 +1,4 @@
-package main;
+package com.java.main;
 
 public class CallObject {
     public static void main(String[] args) {
