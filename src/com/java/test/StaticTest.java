@@ -26,6 +26,7 @@ public class StaticTest {
         System.out.println("amount" + amount);
     }
 
+
 }
 
 
