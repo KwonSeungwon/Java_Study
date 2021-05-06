@@ -2,6 +2,9 @@ package com.java.test;
 
 public class Parent {
 
+
+    public int attribute;
+
     public Parent() {
         System.out.println("parent class!");
     }
@@ -12,6 +15,10 @@ public class Parent {
 
     private void secretMethod() {
 
+    }
+
+    public void parentAgoMethod() {
+        System.out.println("이전메소드!");
     }
 
 }
