@@ -15,6 +15,15 @@ public class Inheritance {
         arrParents[0] = ch1;
         arrParents[1] = ch2;
 
-        
+        NestingClass.innerClass innerClass = new NestingClass.innerClass(); // 이너 클래스생성
+        NestingClass.staticInnerClass staticInnerClass = new NestingClass.staticInnerClass(); // 정적(클래스) 생성
+
+        new AnonymousClass() { // 익명클래스 생성 및 초기화(변수에 값을 담지 않기 때문에 재사용이 불가능)
+
+           @Override
+            public void method() {
+               System.out.println("익명 클래스 메소드 오버라이딩");
+            }
+        }.method();
     }
 }
