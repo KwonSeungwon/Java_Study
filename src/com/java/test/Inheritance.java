@@ -6,7 +6,10 @@ import com.java.main.interfaceMain;
 import java.util.ArrayList;
 
 
-public class Inheritance { // 인터페이스 상속
+public class Inheritance extends AbstractClass {
+    public Inheritance(int age, String name) {
+        super(age, name);
+    } // 추상클래스 상속
     public static void main(String[] args) {
 
         Child child = new Child(); // 자식클래스 생성, 초기화화
@@ -47,5 +50,15 @@ public class Inheritance { // 인터페이스 상속
         System.out.println(toys.get(1).fly());
 
 
+        Inheritance inheritance = new Inheritance(10, "1111");
+        inheritance.methodOne(); // 추상클래스의 멤버 메소드
+        inheritance.abstractMethod(); // Inheritance가 상속받은 추상클래스의 메소드를 구현한 것.
+
+
+    }
+
+    @Override
+    public void abstractMethod() {
+        System.out.println("상속 클래스의 메소드 호출");
     }
 }
